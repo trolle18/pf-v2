@@ -1,0 +1,46 @@
+[
+    {
+        "titel": "Be a hero",
+        "web-link": "https://www.beahero.dk/",
+        "repo": "https://github.com/trolle18/beahero",
+        "description": "For my 2nd semester exam project, I worked along site two others on a website for the coaching company ‘Be a hero’. The company was started in September 2021, by Benthe Elisabeth Jørgensen, with years of experience in the field.",
+        "more": "Benthe is passionate about helping people, to develop and unlock their talents and potential, and thus decided to start her own company to do just that.<br> She already has an established customer base, but needed a responsive website, with a purple color scheme and a cover photo of lavenders. <br> The website should be able to give a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML/CSS and JS, and works on smartphones, tablets, and computers. The logo is simple, and scalable, and along it we created what we refer to as a ‘cape’ to go with the logo. The ‘cape’ is an organic but clean cut icon, inspired by the leaf of a lavender flower, and a superhero cape.",
+        "img1": "media/headlogv2.png",
+        "img2": "media/mocklap1.png",
+        "img3": "media/mockph1.png",
+        "img4": "media/log23v2.png"
+    },
+    {
+        "titel": "TaskRoomies",
+        "weblink": "https://github.com/trolle18/TaskRoomies",
+        "repo": "https://trolle18.github.io/TaskRoomies/",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed libero augue. Pellentesque eu posuere lorem. Donec interdum nulla quis iaculis placerat. Nunc viverra libero a erat gravida porta. Ut nisi mauris, mollis eget molestie nec, ultrices vel lorem. Fusce semper mattis convallis. ",
+        "more": "Nullam a sagittis augue. Vestibulum eros lectus, dictum in rutrum a, vehicula at velit.Nullam odio urna, egestas nec tellus ut, venenatis hendrerit odio. Duis finibus vitae massa eget malesuada. Pellentesque vehicula facilisis purus, et sagittis mauris blandit quis.",
+        "img1": "media/task-mock.jpg",
+        "img2": "media/taskroomies-logo.png",
+        "img3": "media/TR-2.png",
+        "img4": "media/task-mock-b1.jpg"
+    },
+    {
+        "titel": "Generaxion",
+        "weblink": null,
+        "repo": null,
+        "description": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published.",
+        "more": "Our goal were to make it easy, user-friendly and simple to use. We also needed to create some eye-catching branding for company’s social media platforms, to promote the job agent and reach possible job seekers.",
+        "img1": "media/fbpost.png",
+        "img2": "media/fb-post-zen.png",
+        "img3": "media/generaxion-1.png",
+        "img4": "media/generaxion-3.png"
+    },
+    {
+        "titel": "Miscellaneous",
+        "weblink": null,
+        "repo": null,
+        "description": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.<br><br> These are just few examples of what been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.",
+        "more": null,
+        "img1": "media/flat-animals.png",
+        "img2": "media/svgscroll.png",
+        "img3": "media/tictactoe-v1.png",
+        "img4": "media/illpf.png"
+    }
+  ]
