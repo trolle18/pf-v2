@@ -315,8 +315,14 @@ nav a:hover {
 	flex-direction: column;
 }
 
+#projects {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .project {
-	height: auto;
+	height: 100%;
 	width: 100%;
 	margin-bottom: 50px;
 	margin-left: auto;

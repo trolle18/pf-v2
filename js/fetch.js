@@ -18,7 +18,7 @@ function appendProjects(projects) {
     let htmlTemplate = "";
     for (let project of projects) {
         htmlTemplate += /*html*/ `
-        <article>
+
         <div class="project" id="card-c">
             <div class="gallery">
                 <div class="gallery-row">
@@ -59,51 +59,51 @@ function appendProjects(projects) {
                 <button class="moreBtn">Read more</button>                  
             </div>
         </div>
-        </article>
+        
     `;
     }
     document.querySelector("#projects").innerHTML = htmlTemplate;
 }
 
 /* Filtering family members by given searchValue*/
-    function search(searchValue) {
-        searchValue = searchValue.toLowerCase();
-        console.log(searchValue);
+    // function search(searchValue) {
+    //     searchValue = searchValue.toLowerCase();
+    //     console.log(searchValue);
 
-        let filteredPortfolioProjects = [];
+    //     let filteredPortfolioProjects = [];
 
-        for (let portfolioProject of _portfolioProjects) {
-            let name = portfolioProject.name.toLowerCase();
-            if (name.includes(searchValue.toLowerCase())) {
-                filteredPortfolioProjects.push(portfolioProject);
-            }
-        }
-        appendProjects(filteredPortfolioProjects);
-    }
+    //     for (let portfolioProject of _portfolioProjects) {
+    //         let name = portfolioProject.name.toLowerCase();
+    //         if (name.includes(searchValue.toLowerCase())) {
+    //             filteredPortfolioProjects.push(portfolioProject);
+    //         }
+    //     }
+    //     appendProjects(filteredPortfolioProjects);
+    // }
 
 /* Adding a new family member to the _familyMember array*/
-    function add() {
-        let inputTitel = document.getElementById("inputTitel");
-        let inputWeblink = document.getElementById("inputWeblink");
-        let inputRepo = document.getElementById("inputRepo");
-        let inputDescription = document.getElementById("inputDescription");
-        let inputImg1 = document.getElementById("inputImg1");
-        let inputImg2 = document.getElementById("inputImg2");
-        let inputImg3 = document.getElementById("inputImg3");
-        let inputImg4 = document.getElementById("inputImg4");
+    // function add() {
+    //     let inputTitel = document.getElementById("inputTitel");
+    //     let inputWeblink = document.getElementById("inputWeblink");
+    //     let inputRepo = document.getElementById("inputRepo");
+    //     let inputDescription = document.getElementById("inputDescription");
+    //     let inputImg1 = document.getElementById("inputImg1");
+    //     let inputImg2 = document.getElementById("inputImg2");
+    //     let inputImg3 = document.getElementById("inputImg3");
+    //     let inputImg4 = document.getElementById("inputImg4");
 
-        let newProject = {
-            titel: inputTitel.value,
-            weblink: inputWeblink.value,
-            repo: inputRepo.value,
-            description: inputDescription.value,
-            img1: inputImg1.value,
-            img2: inputImg2.value,
-            img3: inputImg3.value,
-            img4: inputImg4.value
-        };
-        console.log(newProject);
+    //     let newProject = {
+    //         titel: inputTitel.value,
+    //         weblink: inputWeblink.value,
+    //         repo: inputRepo.value,
+    //         description: inputDescription.value,
+    //         img1: inputImg1.value,
+    //         img2: inputImg2.value,
+    //         img3: inputImg3.value,
+    //         img4: inputImg4.value
+    //     };
+    //     console.log(newProject);
 
-        _portfolioProjects.push(newProject);
-        appendProjects(_portfolioProjects);
-    }
+    //     _portfolioProjects.push(newProject);
+    //     appendProjects(_portfolioProjects);
+    // }
