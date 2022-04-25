@@ -2,10 +2,9 @@
 /* ---------- FETCH PROJECTS ---------- */
 let portfolioProjects = [];
 
-/* Fetches json data from the file persons.json */
-
+/* Fetches json data  */
 async function fetchProjects() {
-    let response = await fetch("projects.json");
+    let response = await fetch("https://raw.githubusercontent.com/trolle18/pf-v2/main/projects.json");
     let data = await response.json();
     _portfolioProjects = data;
     appendProjects(_portfolioProjects);
@@ -65,7 +64,7 @@ function appendProjects(projects) {
     document.querySelector("#projects").innerHTML = htmlTemplate;
 }
 
-/* Filtering family members by given searchValue*/
+/* Filtering projects by given searchValue*/
     // function search(searchValue) {
     //     searchValue = searchValue.toLowerCase();
     //     console.log(searchValue);
@@ -81,7 +80,7 @@ function appendProjects(projects) {
     //     appendProjects(filteredPortfolioProjects);
     // }
 
-/* Adding a new family member to the _familyMember array*/
+/* Adding a new fproject to the _portfolioProjects array*/
     // function add() {
     //     let inputTitel = document.getElementById("inputTitel");
     //     let inputWeblink = document.getElementById("inputWeblink");
