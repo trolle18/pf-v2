@@ -1,6 +1,6 @@
 [
     {
-        "titel": "Be a hero",
+        "title": "Be a hero",
         "web-link": "https://www.beahero.dk/",
         "repo": "https://github.com/trolle18/beahero",
         "description": "For my 2nd semester exam project, I worked along site two others on a website for the coaching company ‘Be a hero’. The company was started in September 2021, by Benthe Elisabeth Jørgensen, with years of experience in the field.",
@@ -11,7 +11,7 @@
         "img4": "media/log23v2.png"
     },
     {
-        "titel": "TaskRoomies",
+        "title": "TaskRoomies",
         "weblink": "https://github.com/trolle18/TaskRoomies",
         "repo": "https://trolle18.github.io/TaskRoomies/",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed libero augue. Pellentesque eu posuere lorem. Donec interdum nulla quis iaculis placerat. Nunc viverra libero a erat gravida porta. Ut nisi mauris, mollis eget molestie nec, ultrices vel lorem. Fusce semper mattis convallis. ",
@@ -22,7 +22,7 @@
         "img4": "media/task-mock-b1.jpg"
     },
     {
-        "titel": "Generaxion",
+        "title": "Generaxion",
         "weblink": null,
         "repo": null,
         "description": "During my 2nd semester at the business academy, we were given the task ofcreating and incorporating a job agent prototype, for Generaxion’s job site, for any interested job seekers to use and apply through, and be notified if an open position suiting them were to be published.",
@@ -33,7 +33,7 @@
         "img4": "media/generaxion-3.png"
     },
     {
-        "titel": "Miscellaneous",
+        "title": "Miscellaneous",
         "weblink": null,
         "repo": null,
         "description": "Besides working on projects as a part of my education, I also experiment and do a lot of programming, designing or illustrating in my spare time, which also helps me learn and expand my knowledge.<br><br> These are just few examples of what been working on:<br> A Tic Tac Toe game, some vector illustrations made in illustrator, and an svg, which “draws” when you scroll.",
