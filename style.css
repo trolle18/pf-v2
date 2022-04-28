@@ -564,8 +564,8 @@ nav a:hover {
 
 .contact-btn:hover {
 	padding: 5px 16px;
-	filter: drop-shadow(0px 0px 1px var(--acc-tur));
-	box-shadow: 0px 0px 4px 1px var(--acc-tur);
+	filter: drop-shadow(0px 0px 1px var(--acc-yel));
+	box-shadow: 0px 0px 4px 1px var(--acc-yel);
 }
 
 
