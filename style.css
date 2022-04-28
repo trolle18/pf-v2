@@ -2,6 +2,7 @@
 :root {
 	--bg-color: #000;
 	--l-grey: #E8E8E8;
+	--ml-grey: #b0aeae;
 	--m-grey: #767676;
 	--d-grey: #282828;
 	--acc-yel: #FCB900;
@@ -99,7 +100,7 @@ p {
 
 .content {
 	margin: 50px 0px;
-	padding: 0px 5px
+	padding: 0px 0px
 }
 
 .accyel {
@@ -152,6 +153,10 @@ nav a:hover {
 	padding: 5px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.nav-links a:last-child {
+	color: var(--ml-grey);
 }
 
 
@@ -315,6 +320,11 @@ nav a:hover {
 	flex-direction: column;
 }
 
+.work-title {
+	width: 100%;
+	margin: 0 auto;
+}
+
 #projects {
 	width: 100%;
 	display: flex;
@@ -356,6 +366,27 @@ nav a:hover {
 	fill: var(--l-grey);
 	margin-left: 10px;
 	cursor: pointer;
+}
+
+#card-c:nth-child(2) > div.project-details > span.ellipsis {
+	display: none;
+}
+#card-c:nth-child(2) > div.project-details > .moreBtn {
+	display: none;
+}
+
+#card-c:nth-child(3) > div.project-details > div > div {
+	visibility: hidden;
+}
+
+#card-c:nth-child(4) > div.project-details > div > div {
+	visibility: hidden;
+}
+#card-c:nth-child(4) > div.project-details > span.ellipsis {
+	display: none;
+}
+#card-c:nth-child(4) > div.project-details > .moreBtn {
+	display: none;
 }
 
 .project p {
@@ -633,7 +664,7 @@ footer {
 	margin-top: 50px;
 	text-align: center;
 	color: var(--m-grey);
-	font-size: 8px;
+	font-size: 10px;
 }
 
 
@@ -656,6 +687,10 @@ footer {
 /* ----- PHONE ----- */
 @media screen and (max-width: 668px) {
 
+	.content {
+		width: 90%;
+	}
+
 	/* ----- MOBILE MENU ----- */
 
 	nav {
@@ -673,9 +708,9 @@ footer {
 	}
 
 	.dropdown {
-		width: 100px;
-		height: 26px;
-		padding: 5px 0px;
+		width: auto;
+		height: 100%;
+		padding: 0px 0px;
 		margin: 0px;
 		display: flex;
 		flex-direction:column;
@@ -683,11 +718,11 @@ footer {
 	}
 
 	.drop-btn {
-		width: 100%;
+		width: auto;
 		height: auto;
-		padding: 0px 10px;
-		top: 0px;
-		right: 0px;
+		padding: 0px 0px 0px 0px;
+		top: 0%;
+		right: 0%;
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
@@ -699,6 +734,7 @@ footer {
 
 	.drop-btn i {
 		right: 0;
+		padding: 5px 5px 0px 0px;
 	}
   
 	.drop-btn:hover, .drop-btn:focus {
@@ -715,13 +751,25 @@ footer {
   
 
 	.dropdown-content a {
+		width: 120px;
+		padding: 10px 10px;
 		color: var(--txt-clr-l);
 		background-color: rgba(0, 0, 0, 0.8);
-		padding: 10px 15px;
 		text-decoration: none;
-		display: block;
 		text-transform: uppercase;
 		text-align: right;
+	}
+
+	.dropdown-content a:first-child {
+		margin-top: 5px;
+		border: solid red 0px;
+	}
+
+	
+	.dropdown-content a:last-child {
+		border: solid red 0px;
+		/* border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px; */
 	}
 
 	.fa {
@@ -736,6 +784,11 @@ footer {
 
 	.header-cntr {
 		width: 100%;
+	}
+
+	.header-box {
+		width: 95%;
+		margin: 0 auto;
 	}
 
 	.header-title h1 {
@@ -761,6 +814,7 @@ footer {
 
 	.skill-cntr {
 		display: contents;
+		width: 95%;
 	}
 
 	.card-skills {
@@ -775,7 +829,7 @@ footer {
 
 	
 	.profile {
-		width: 160px; 
+		width: 150px; 
 		height: 260px;
 		padding: 0px;
 		border-top-left-radius: 120px;
@@ -794,12 +848,22 @@ footer {
 	}
 
 	/* Work */
+
+	.work-title {
+		width: 95%;
+		margin: 0 auto;
+	}
+
 	.gallery {
 		border: solid red 0px;
 		width: 100%;
 		margin: 0;
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.project {
+		width: 95%;
 	}
 
 	.project-details {
@@ -921,7 +985,7 @@ footer {
 
 	#work {
 		height: auto;
-		width: 90%;
+		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
 	}
