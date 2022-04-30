@@ -18,7 +18,7 @@
         for (let project of projects) {
             htmlTemplate += /*html*/ `
 
-            <div class="project" id="card-c">
+            <div class="project" id="">
                 <div class="gallery">
                     <div class="gallery-row">
                         <div class="img1-cntr"> <img src="${project.img1}" class="img1 modal-hover-opacity" id="img1" onclick="onClick(this)"> </div>
