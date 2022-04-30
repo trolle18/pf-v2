@@ -338,17 +338,17 @@ nav a:hover {
 }
 
 .project-title {
+	height: auto;
 	width: auto;
 	border: solid blue 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-
 }
 
-.project-title h3 {
-	margin-top: 0;
+.project-title #title {
+	margin-top: -6px;
 	text-transform: uppercase;
 }
 
@@ -366,29 +366,37 @@ nav a:hover {
 	cursor: pointer;
 }
 
-#card-c:nth-child(2) > div.project-details > span.ellipsis {
+
+#projects:nth-child(2) > div.project-details > span.ellipsis {
 	display: none;
 }
-#card-c:nth-child(2) > div.project-details > .moreBtn {
+#projects:nth-child(2) > div.project-details > .moreBtn {
 	display: none;
 }
 
-#card-c:nth-child(3) > div.project-details > div > div {
+#projects:nth-child(3) > div.project-details > div > div {
 	visibility: hidden;
+}
+#projects > div:nth-child(3) > div.project-details > div > div {
+	display: none;
 }
 
-#card-c:nth-child(4) > div.project-details > div > div {
+
+#projects:nth-child(4) > div.project-details > div > div {
 	visibility: hidden;
 }
-#card-c:nth-child(4) > div.project-details > span.ellipsis {
+#projects:nth-child(4) > div.project-details > span.ellipsis {
 	display: none;
 }
 #card-c:nth-child(4) > div.project-details > .moreBtn {
 	display: none;
 }
+#projects > div:nth-child(4) > div.project-details > div > div {
+	display: none;
+}
 
-.project p {
-	margin-bottom: 5px;
+.project #description {
+	margin: 0px 0px 5px 0px;
 }
 
 .web-link span {
@@ -560,6 +568,7 @@ nav a:hover {
 	border: solid var(--acc-yel) 2px;
 	border-radius: 5px;
 	transition: all 0.2s ease-out;
+	cursor: pointer;
 }
 
 .contact-btn a {
