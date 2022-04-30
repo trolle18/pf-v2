@@ -5,8 +5,8 @@
         "repo": "https://github.com/trolle18/beahero",
         "description": "For my 2nd semester exam project, I worked along side two fellow students, on the website for ‘Be a hero’. A coaching company started in September 2021, by Benthe, with years of experience in the field. <br/> She already has an established customer base, but needed a responsive website, that gives a quick overview of her, her business, and its services. Furthermore, she needed a logo, and a cover photo for her LinkedIn business page.<br><br> We came up with a simple design that is easy to navigate, it is build with HTML, CSS and Vanilla JS. <br/> The logo is simple, and comes in multiple versions, for scalablility. To go with, I created what we refer to as a ‘cape’. The ‘cape’ is an organic, but clean-cut icon, inspired by a lavender flowerpetal, and a superhero cape.",
         "img1": "media/beahero/headlogv2.png",
-        "img2": "media/beahero/mocklap1.png",
-        "img3": "media/beahero/mockph1.png",
+        "img2": "media/beahero/mocklap.png",
+        "img3": "media/beahero/mockphone.png",
         "img4": "media/beahero/log23v2.png"
     },
     {
@@ -14,10 +14,10 @@
         "weblink": "https://trolle18.github.io/TaskRoomies/",
         "repo": "https://github.com/trolle18/TaskRoomies",
         "description": "TaskRoomies is a web app for roommates, dorms and other cohabitants. <br/> <br/> Its purpose is to provide a clear, easy overview of the shared household chores, and thus remove the stress and mental energy of keeping track of who does what when. <br/> It also comes with a personal list, to keep track of all your personal to-do's and chores. <br/> <br/> Try out the demo in the link above!",
-        "img1": "media/taskroomies/task-mock.jpg",
-        "img2": "media/taskroomies/taskroomies-logo.png",
-        "img3": "media/taskroomies/TR-2.png",
-        "img4": "media/taskroomies/task-mock-b1.jpg"
+        "img1": "media/taskroomies/task-mock.png",
+        "img2": "media/taskroomies/taskroomies-logo1.png",
+        "img3": "media/taskroomies/taskroomies-logo2.png",
+        "img4": "media/taskroomies/task-mock-b1.png"
     },
     {
         "title": "Generaxion",

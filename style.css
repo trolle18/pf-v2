@@ -278,13 +278,12 @@ nav a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 290px; 
-	height: 350px;
+	width: 260px; 
+	height: auto;
 	position: absolute;
 	bottom: 0px;
-	left: -25px;
-	margin-left: auto;
-	margin-right: auto;
+	/* left: -25px; */
+	margin: 0 auto;
 }
 
 /* SVG */
