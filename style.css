@@ -2,9 +2,11 @@
 :root {
 	--bg-color: #000;
 	--l-grey: #E8E8E8;
+	--ml-grey: #B0AEAE;
 	--m-grey: #767676;
 	--d-grey: #282828;
 	--acc-yel: #FCB900;
+	--acc-gre: #153019;
 	--acc-tur: #00E8CB;
 
 	--txt-clr-d: #222;
@@ -99,7 +101,7 @@ p {
 
 .content {
 	margin: 50px 0px;
-	padding: 0px 5px
+	padding: 0px 0px
 }
 
 .accyel {
@@ -152,6 +154,10 @@ nav a:hover {
 	padding: 5px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.nav-links a:last-child {
+	color: var(--ml-grey);
 }
 
 
@@ -262,7 +268,7 @@ nav a:hover {
 	width: 250px; 
 	height: 300px;
 	padding-left: 5px;
-	background-color: rgb(21, 48, 25);
+	background-color: var(--acc-gre);
 	position: relative;
 	border-top-left-radius: 120px;
 	border-top-right-radius: 120px;
@@ -272,17 +278,13 @@ nav a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 290px; 
-	height: 350px;
+	width: 260px; 
+	height: auto;
 	position: absolute;
 	bottom: 0px;
-	left: -25px;
-	margin-left: auto;
-	margin-right: auto;
+	/* left: -25px; */
+	margin: 0 auto;
 }
-
-
-
 
 /* SVG */
 .signature svg {
@@ -315,6 +317,11 @@ nav a:hover {
 	flex-direction: column;
 }
 
+.work-title {
+	width: 100%;
+	margin: 0 auto;
+}
+
 #projects {
 	width: 100%;
 	display: flex;
@@ -330,17 +337,17 @@ nav a:hover {
 }
 
 .project-title {
+	height: auto;
 	width: auto;
 	border: solid blue 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-
 }
 
-.project-title h3 {
-	margin-top: 0;
+.project-title #title {
+	margin-top: -6px;
 	text-transform: uppercase;
 }
 
@@ -358,8 +365,37 @@ nav a:hover {
 	cursor: pointer;
 }
 
-.project p {
-	margin-bottom: 5px;
+
+#projects:nth-child(2) > div.project-details > span.ellipsis {
+	display: none;
+}
+#projects:nth-child(2) > div.project-details > .moreBtn {
+	display: none;
+}
+
+#projects:nth-child(3) > div.project-details > div > div {
+	visibility: hidden;
+}
+#projects > div:nth-child(3) > div.project-details > div > div {
+	display: none;
+}
+
+
+#projects:nth-child(4) > div.project-details > div > div {
+	visibility: hidden;
+}
+#projects:nth-child(4) > div.project-details > span.ellipsis {
+	display: none;
+}
+#card-c:nth-child(4) > div.project-details > .moreBtn {
+	display: none;
+}
+#projects > div:nth-child(4) > div.project-details > div > div {
+	display: none;
+}
+
+.project #description {
+	margin: 0px 0px 5px 0px;
 }
 
 .web-link span {
@@ -514,15 +550,24 @@ nav a:hover {
 	text-align: center;
 }
 
+.contact-btn-box {
+	border: solid red 1px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
 .contact-btn {
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	padding: 5px 10px;
-	background-color: transparent;
+	z-index: 100;
+	background-color: var(--bg-color);
 	border: solid var(--acc-yel) 2px;
 	border-radius: 5px;
 	transition: all 0.2s ease-out;
+	cursor: pointer;
 }
 
 .contact-btn a {
@@ -533,8 +578,8 @@ nav a:hover {
 
 .contact-btn:hover {
 	padding: 5px 16px;
-	filter: drop-shadow(0px 0px 1px var(--acc-tur));
-	box-shadow: 0px 0px 4px 1px var(--acc-tur);
+	filter: drop-shadow(0px 0px 1px var(--acc-yel));
+	box-shadow: 0px 0px 4px 1px var(--acc-yel);
 }
 
 
@@ -633,11 +678,11 @@ footer {
 	margin-top: 50px;
 	text-align: center;
 	color: var(--m-grey);
-	font-size: 8px;
+	font-size: 10px;
 }
 
 
-/* ---------- FADE IN ANIMATIONS ---------- */
+/* ---------- ANIMATIONS ---------- */
 .fade-in {
     transition: all 0.3s ease-in-out;
     opacity: 0;
@@ -656,8 +701,11 @@ footer {
 /* ----- PHONE ----- */
 @media screen and (max-width: 668px) {
 
-	/* ----- MOBILE MENU ----- */
+	.content {
+		width: 90%;
+	}
 
+	/* ----- MOBILE MENU ----- */
 	nav {
 		width: 100%;
 		padding: 0;
@@ -673,9 +721,9 @@ footer {
 	}
 
 	.dropdown {
-		width: 100px;
-		height: 26px;
-		padding: 5px 0px;
+		width: auto;
+		height: 100%;
+		padding: 0px 0px;
 		margin: 0px;
 		display: flex;
 		flex-direction:column;
@@ -683,11 +731,11 @@ footer {
 	}
 
 	.drop-btn {
-		width: 100%;
+		width: auto;
 		height: auto;
-		padding: 0px 10px;
-		top: 0px;
-		right: 0px;
+		padding: 0px 0px 0px 0px;
+		top: 0%;
+		right: 0%;
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
@@ -699,6 +747,7 @@ footer {
 
 	.drop-btn i {
 		right: 0;
+		padding: 5px 5px 0px 0px;
 	}
   
 	.drop-btn:hover, .drop-btn:focus {
@@ -713,15 +762,25 @@ footer {
 		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.8);
 	}
   
-
 	.dropdown-content a {
+		width: 120px;
+		padding: 10px 10px;
 		color: var(--txt-clr-l);
 		background-color: rgba(0, 0, 0, 0.8);
-		padding: 10px 15px;
 		text-decoration: none;
-		display: block;
 		text-transform: uppercase;
 		text-align: right;
+	}
+
+	.dropdown-content a:first-child {
+		margin-top: 5px;
+		border: solid red 0px;
+	}
+
+	.dropdown-content a:last-child {
+		border: solid red 0px;
+		/* border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px; */
 	}
 
 	.fa {
@@ -732,10 +791,15 @@ footer {
 		display: contents;
 	}
 
-	/* Header */
 
+	/* ----- About ----- */
 	.header-cntr {
 		width: 100%;
+	}
+
+	.header-box {
+		width: 95%;
+		margin: 0 auto;
 	}
 
 	.header-title h1 {
@@ -761,6 +825,7 @@ footer {
 
 	.skill-cntr {
 		display: contents;
+		width: 95%;
 	}
 
 	.card-skills {
@@ -775,7 +840,7 @@ footer {
 
 	
 	.profile {
-		width: 160px; 
+		width: 150px; 
 		height: 260px;
 		padding: 0px;
 		border-top-left-radius: 120px;
@@ -793,13 +858,23 @@ footer {
 		object-fit: cover;
 	}
 
-	/* Work */
+
+	/* ----- Work ----- */
+	.work-title {
+		width: 95%;
+		margin: 0 auto;
+	}
+
 	.gallery {
 		border: solid red 0px;
 		width: 100%;
 		margin: 0;
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.project {
+		width: 95%;
 	}
 
 	.project-details {
@@ -834,12 +909,13 @@ footer {
 	}
 
 
-	/* Work */
+	/* ----- Contact ----- */
 	#contact {
 		width: 75%;
 	}
 
-	/* Footer */
+
+	/* ----- Footer ----- */
 	footer {
 		width: 100%;
 		padding: 80px 0px 20px 0px;
@@ -877,6 +953,8 @@ footer {
         display: none;
 	} 
 
+
+	/* ----- About ----- */
 	.header-cntr {
 		width: 90%;
 	}
@@ -899,7 +977,6 @@ footer {
 		padding: 5px;
 	}
 
-
 	.profile {
 		width: 240px; 
 		height: 280px;
@@ -919,19 +996,25 @@ footer {
 		object-fit: cover;
 	}
 
+
+	/* ----- Work ----- */
 	#work {
 		height: auto;
-		width: 90%;
+		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
+
+	/* ----- Contact ----- */
 	#contact {
 		width: 75%;
 		padding-top: 60px;
 		text-align: center;
 	}
 
+
+	/* ----- Footer ----- */
 	footer {
 		width: 100%;
 		padding: 80px 0px 20px 0px;
@@ -955,6 +1038,8 @@ footer {
             display: none;
         }
 
+
+	/* ----- Work ----- */
 	#work {
 		height: auto;
 		width: 80%;
@@ -962,6 +1047,8 @@ footer {
 		margin-right: auto;
 	}
 
+
+	/* ----- Contact ----- */
 	#contact  {
 		width: 90%;
 		padding-top: 60px;
