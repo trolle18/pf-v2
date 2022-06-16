@@ -6,13 +6,16 @@
     async function fetchProjects() {
         let response = await fetch("projects.json");
         let data = await response.json();
-        _portfolioProjects = data;
-        appendProjects(_portfolioProjects);
+
+        portfolioProjects = data;
+
+        appendProjects(portfolioProjects);
     }
+
     fetchProjects();
 
 
-/* Appends json data to the DOM */
+/* Append */
     function appendProjects(projects) {
         let htmlTemplate = "";
         for (let project of projects) {
@@ -50,6 +53,8 @@
                         </a>
                     </div>
                     </div> 
+                    <span id="build">${project.build}</span>
+
                     <p id="description">${project.description}</p>
                <!-- <span class="ellipsis">...</span><br>
                     <span class="more"> 
@@ -59,50 +64,6 @@
                 </div>
             </div>
             
-        `;
-        }
+        `};
         document.querySelector("#projects").innerHTML = htmlTemplate;
     }
-
-/* Filtering projects by given searchValue*/
-    // function search(searchValue) {
-    //     searchValue = searchValue.toLowerCase();
-    //     console.log(searchValue);
-
-    //     let filteredPortfolioProjects = [];
-
-    //     for (let portfolioProject of _portfolioProjects) {
-    //         let name = portfolioProject.name.toLowerCase();
-    //         if (name.includes(searchValue.toLowerCase())) {
-    //             filteredPortfolioProjects.push(portfolioProject);
-    //         }
-    //     }
-    //     appendProjects(filteredPortfolioProjects);
-    // }
-
-/* Adding a new fproject to the _portfolioProjects array*/
-    // function add() {
-    //     let inputTitel = document.getElementById("inputTitel");
-    //     let inputWeblink = document.getElementById("inputWeblink");
-    //     let inputRepo = document.getElementById("inputRepo");
-    //     let inputDescription = document.getElementById("inputDescription");
-    //     let inputImg1 = document.getElementById("inputImg1");
-    //     let inputImg2 = document.getElementById("inputImg2");
-    //     let inputImg3 = document.getElementById("inputImg3");
-    //     let inputImg4 = document.getElementById("inputImg4");
-
-    //     let newProject = {
-    //         titel: inputTitel.value,
-    //         weblink: inputWeblink.value,
-    //         repo: inputRepo.value,
-    //         description: inputDescription.value,
-    //         img1: inputImg1.value,
-    //         img2: inputImg2.value,
-    //         img3: inputImg3.value,
-    //         img4: inputImg4.value
-    //     };
-    //     console.log(newProject);
-
-    //     _portfolioProjects.push(newProject);
-    //     appendProjects(_portfolioProjects);
-    // }
